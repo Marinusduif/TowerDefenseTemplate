@@ -9,11 +9,16 @@ public class turret : MonoBehaviour
     [Header("references")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private GameObject bulletPrefap;
+    [SerializeField] private Transform shotingPoint;
 
     [Header("attributes")]
     [SerializeField] private float targetingRange = 5f;
+    [SerializeField] private float rotationSpeed = 5f;
+    [SerializeField] private float bulletRecharge = 1f;
 
     private Transform target;
+    private float timeToFireBullet;
 
     private void Update()
     {
@@ -24,10 +29,33 @@ public class turret : MonoBehaviour
 
         }
 
+        rotateToTarget();
+
+        if (!CheckTargetRange())
+        {
+            target = null;
+
+        }else
+        {
+            timeToFireBullet += Time.deltaTime;
+
+            if (timeToFireBullet >= 1f / bulletRecharge)
+            {
+                Shoot();
+                timeToFireBullet = 0f;
+            }
+        }
+
+
         if (target != null)
         {
             rotateToTarget();
         }
+    }
+
+    private bool CheckTargetRange()
+    {
+        return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
     private void FindTarget()
@@ -51,13 +79,21 @@ public class turret : MonoBehaviour
         }
     }
 
+    private void Shoot(){
+        GameObject bulletObj = Instantiate(bulletPrefap, shotingPoint.position, quaternion.identity);
+        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        bulletScript.SetTarget(target);
+    }   
+
+    
     private void rotateToTarget()
     {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - 
             transform.position.x) * Mathf.Rad2Deg - 90f;
 
         quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        turretRotationPoint.rotation = targetRotation;
+        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation,
+            targetRotation, rotationSpeed * Time.deltaTime);
     }
 
     private void OnDrawGizmosSelected()

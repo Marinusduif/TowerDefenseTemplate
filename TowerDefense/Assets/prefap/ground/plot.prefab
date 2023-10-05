@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6849052645183457913}
   - component: {fileID: 6849052645183457912}
   - component: {fileID: 7771123882137969663}
+  - component: {fileID: -1554386689425470259}
   m_Layer: 0
   m_Name: plot
   m_TagString: Untagged
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0008557588, y: -0.002972126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,5 +110,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.31438312, y: 0.3220389}
   m_EdgeRadius: 0
+--- !u!114 &-1554386689425470259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849052645183457910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80120dfd19de0bb4d83963bbdb7e9226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 6849052645183457912}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0}
