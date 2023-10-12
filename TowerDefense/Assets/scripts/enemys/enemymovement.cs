@@ -8,6 +8,7 @@ public class enemymovement : MonoBehaviour
 {
     [Header("references")]
     [SerializeField] private Rigidbody2D rb;
+    private Health playerhealth;
 
     [Header("attributes")]
     [SerializeField] private float movespeed = 2f;
@@ -18,26 +19,30 @@ public class enemymovement : MonoBehaviour
     private void Start()
     {
         target = enemyPoints.main.path[pathIndex];
+        pathIndex = 0;
+        playerhealth = FindAnyObjectByType<Health>();
     }
 
     private void Update()
     {
-        if (Vector2.Distance(target.position, transform.position) <= 0.1f){
-            pathIndex++;
-
-
-            if(pathIndex == enemyPoints.main.path.Length)
+        if (Vector2.Distance(target.position, transform.position) <= 0.1f)
+        {
+            if (pathIndex < enemyPoints.main.path.Length - 1)
             {
-                enemyspawner.onEnemyDestroy.Invoke();
-                Destroy(gameObject);
-                return;
-            } else
-            {
+                pathIndex++;
                 target = enemyPoints.main.path[pathIndex];
             }
-
+            else
+            {
+                enemyspawner.onEnemyDestroy.Invoke();
+                playerhealth.TakeDamage(10);
+                // Call TakeDamage to reduce health when the enemy is destroyed
+                Destroy(gameObject);
+            }
         }
     }
+
+
 
     public void FixedUpdate()
     {

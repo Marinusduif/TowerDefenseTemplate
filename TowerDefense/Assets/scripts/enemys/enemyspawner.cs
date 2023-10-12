@@ -6,9 +6,9 @@ using UnityEngine.EventSystems;
 
 public class enemyspawner : MonoBehaviour
 {
-    [Header("reference")] 
+    [Header("reference")]
     [SerializeField] private GameObject[] enemyPrefaps;
-    
+
     [Header("Attributes")]
     [SerializeField] private int baseEnemys = 8;
     [SerializeField] private float enemysPersecond = 0.50f;
@@ -21,7 +21,7 @@ public class enemyspawner : MonoBehaviour
     private bool isSpawning = false;
 
     [Header("events")]
-    public static UnityEvent onEnemyDestroy = new UnityEvent();
+    public static UnityEvent onEnemyDestroy = new();
 
     private void Awake()
     {
@@ -46,7 +46,7 @@ public class enemyspawner : MonoBehaviour
     }
 
     private void EndWave()
-    {   
+    {
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
@@ -55,10 +55,11 @@ public class enemyspawner : MonoBehaviour
 
     private void Update()
     {
-        if (!isSpawning) return; 
+        if (!isSpawning) return;
         timeSinceLastSpawn += Time.deltaTime;
 
-        if (timeSinceLastSpawn >= (1f / enemysPersecond) && enemysLeftToSpawn > 0) {
+        if (timeSinceLastSpawn >= (1f / enemysPersecond) && enemysLeftToSpawn > 0)
+        {
             SpawnEmemie();
             enemysLeftToSpawn--;
             enemysAlive++;
@@ -71,7 +72,7 @@ public class enemyspawner : MonoBehaviour
         }
     }
 
-    
+
 
     private void SpawnEmemie()
     {
@@ -87,4 +88,3 @@ public class enemyspawner : MonoBehaviour
 
 
 }
-
