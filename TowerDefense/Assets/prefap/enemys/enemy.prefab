@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f12f2c9fcfe07c4d97b5d5dd8ab508b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 2
+  HitPoints: 3
   FtokensPerEnemy: 20
 --- !u!95 &8477012171764219124
 Animator:
