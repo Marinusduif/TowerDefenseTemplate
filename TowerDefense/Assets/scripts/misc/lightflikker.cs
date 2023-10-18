@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+[RequireComponent(typeof(Light2D))]
 public class lightflikker : MonoBehaviour
 {
     [SerializeField] private Light2D light;
@@ -15,13 +16,7 @@ public class lightflikker : MonoBehaviour
     [SerializeField] private float minValue;
     [SerializeField] private float maxValue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         frames++;
