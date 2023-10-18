@@ -2676,11 +2676,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d1d5233c24b5a49abbf749a57bc28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefaps:
+  enemyPrefabs:
   - {fileID: 6411767605405135773, guid: 92088bc79a5981144ba6fc9bb5b8a08c, type: 3}
-  baseEnemys: 8
-  enemysPersecond: 2
-  timeBetweenWaves: 5
+  baseEnemies: 8
+  enemiesPerSecond: 1.5
+  timeBetweenWaves: 4
   scalingFactor: 0.75
 --- !u!114 &287498625
 MonoBehaviour:
@@ -3082,7 +3082,7 @@ GameObject:
   - component: {fileID: 309523879}
   - component: {fileID: 309523878}
   m_Layer: 0
-  m_Name: Audio Source (1)
+  m_Name: soundeffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3191,13 +3191,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309523877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6014323, y: 1.1276104, z: 81.14919}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.674489, y: 1.246955, z: -41.453323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1328146168}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &316471194
 PrefabInstance:
@@ -11554,6 +11554,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6849052645183457913, guid: b9598d9ba8e813640b435b757710ec1a, type: 3}
   m_PrefabInstance: {fileID: 1326910073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1328146167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328146168}
+  m_Layer: 0
+  m_Name: audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328146168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328146167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0730567, y: -0.11934456, z: 122.602516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 309523879}
+  - {fileID: 1486960711}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1341331691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12634,7 +12667,7 @@ GameObject:
   - component: {fileID: 1486960711}
   - component: {fileID: 1486960710}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12743,13 +12776,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486960709}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3290777, y: 0.49229956, z: 15.134778}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.4021344, y: 0.61164415, z: -107.467735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1328146168}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1488400538
 PrefabInstance:
