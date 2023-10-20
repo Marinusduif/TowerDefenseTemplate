@@ -43,7 +43,7 @@ Plaats in je readme een animated gif van je gameplay (+- 10 sec.) waarin de impl
 Je gebruikt een game design tool om je game design vast te leggen en te communiceren. Daarnaast onderbouw je de design keuzes ten aanzien van “playability” en “replayability” voor je game schriftelijk. 
 
 Voorbeeld van een one page design:
-![](/TowerDefense/Assets/forthereadme/One%20Page.docx) 
+![](/TowerDefense/Assets/forthereadme/One%20Page.pdf) 
 
 Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit hebt gedaan.
 
@@ -68,7 +68,7 @@ om de vier seconden spawnt er een nieuwe groep enemy's elke ronde zijn de groep 
 ## Product 7: Class Diagram voor volledige codebase 
 
 https://miro.com/welcomeonboard/V3FVaVYxcDd4Q0lwWnBKVVNaOEFYenoyRWdPT3B5bzdBTU15Q3BrSlNXWUFSakxnSzdLOTg3T1Y2NnpFbmExanwzNDU4NzY0NTY2NzM2NzA4ODc1fDI=?share_link_id=339331857102
-```
+s
 
 ## Product 8: Prototype test video
 Je hebt een werkend prototype gemaakt om een idee te testen. Omschrijf if je readme wat het idee van de mechanics is geweest wat je wilde testen en laat een korte video van de gameplay test zien. 
