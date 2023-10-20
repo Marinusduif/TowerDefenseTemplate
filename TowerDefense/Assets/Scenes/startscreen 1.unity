@@ -194,13 +194,13 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 165546934}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1380748289
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &41459213
@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 165546934}
   - component: {fileID: 165546933}
   - component: {fileID: 165546936}
+  - component: {fileID: 165546937}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -333,7 +334,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -343,6 +344,23 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &165546937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165546932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: a058103eb5cdcee4a8be73304b257ea7, type: 2}
 --- !u!1 &339235677
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 369, y: -375}
+  m_AnchoredPosition: {x: 450.00003, y: -375}
   m_SizeDelta: {x: 586.85, y: 70.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082679705
@@ -477,7 +495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: press space to suffer
+  m_text: press space to work
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ccb6ab7b98c8574bb994ae52bb87175, type: 2}
   m_sharedMaterial: {fileID: 530505225580135997, guid: 7ccb6ab7b98c8574bb994ae52bb87175, type: 2}
