@@ -12,6 +12,11 @@ public class inputsceneloader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Input();
+    }
+
+    public void Input()
+    {
         // Check if the specified key is pressed
         if (Input.GetKeyDown(loadSceneKey))
         {

@@ -67,37 +67,7 @@ om de vier seconden spawnt er een nieuwe groep enemy's elke ronde zijn de groep 
 
 ## Product 7: Class Diagram voor volledige codebase 
 
-Je brengt je volledige codebase in kaart met behulp van een class diagram. Binnen de classes hoeven geen private members te worden weergegeven. Wel alle public members (fields en methods). Ook geef je indien relevant de relaties tussen je classes weer. Je class diagram plaats je in je readme op github. Evt mag je dit doen m.b.v de [“Mermaid”](https://mermaid.js.org/syntax/classDiagram.html) tool.
-
-
-```mermaid
----
-title: Animal example
----
-classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
-
+https://miro.com/welcomeonboard/V3FVaVYxcDd4Q0lwWnBKVVNaOEFYenoyRWdPT3B5bzdBTU15Q3BrSlNXWUFSakxnSzdLOTg3T1Y2NnpFbmExanwzNDU4NzY0NTY2NzM2NzA4ODc1fDI=?share_link_id=339331857102
 ```
 
 ## Product 8: Prototype test video
@@ -112,8 +82,7 @@ Je maakt een SCRUM planning en geeft daarbij een inschatting aan elke userstory 
 
 Plaats in de readme een link naar je trello en **zorg ervoor dat je deze openbaar maakt**
 
-[Link naar de openbare trello](https://trello.com/b/w60wkKSU/examen-paraphrenia)
-
+[Link naar de openbare trello] (https://trello.com/b/ev0JCOy7/white-noise-towerdefense)
 ## Product 10: Gitflow conventions
 
 ik heb twee branches gebruikt: master en develop in develop maakte ik feature branches aan waar ik aan mijn dingen werkten en als het af was sluite ik de feature af en maakte ik een nieuwe aan om het nieuwe ding te maken.

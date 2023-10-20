@@ -14,7 +14,7 @@ public class HealtEnemy : MonoBehaviour
         
         if (HitPoints <= 0)
         {
-            enemyPoints.main.GetFTokens(FtokensPerEnemy);
+            
             enemyspawner.onEnemyDestroy.Invoke();
             Destroy(gameObject);
         }
