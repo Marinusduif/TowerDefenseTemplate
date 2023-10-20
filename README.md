@@ -43,7 +43,7 @@ Plaats in je readme een animated gif van je gameplay (+- 10 sec.) waarin de impl
 Je gebruikt een game design tool om je game design vast te leggen en te communiceren. Daarnaast onderbouw je de design keuzes ten aanzien van “playability” en “replayability” voor je game schriftelijk. 
 
 Voorbeeld van een one page design:
-![](/TowerDefense/Assets/forthereadme/One%20Page.pdf) 
+![](/TowerDefense/Assets/forthereadme/Screenshot%202023-10-20%20151616.png) 
 
 Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit hebt gedaan.
 
