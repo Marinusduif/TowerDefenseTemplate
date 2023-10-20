@@ -103,7 +103,7 @@ classDiagram
 ## Product 8: Prototype test video
 Je hebt een werkend prototype gemaakt om een idee te testen. Omschrijf if je readme wat het idee van de mechanics is geweest wat je wilde testen en laat een korte video van de gameplay test zien. 
 
-[![example test video](/TowerDefense/Assets/forthereadme/White-Noise%202023-10-20%2012-59-37.mp4) 
+[![example test video]https://youtu.be/V-JNuKl-C4g 
 in de video ben ik het health systeem aan het testen om te kijken om dat ik wou zien of de ui element er goed uitzagen
 
 ## Product 9: SCRUM planning inschatting 
