@@ -1,12 +1,5 @@
 # TowerDefenseTemplate
-Dit is een template wat door jullie te gebruiken is voor het juist inleveren van alle producten voor de Towerdefense beroepsopdracht. **Verwijder uiteindelijk de template teksten!**
-
-Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
-
-![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
-
-![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
-
+White-Noise Towerdefense Marinus van Duijvenbode
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
@@ -15,14 +8,14 @@ Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
 
 Bijvoorbeeld:
 
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+"ik vindt dat het lightflikker, dry en srp is omdat dat dit script compleet los is van alle andere scripten het enige dat het script doet is een 2d lamp van intersetie laten veranderen per elke frame"
+[link naar script](/TowerDefense/Assets/scripts/misc/lightflikker.cs/)"*
 
 ## Product 2: "Projectmappen op GitHub"
 
 Je commit de mappenstructuur van je unity project op github en verwijst vanuit je readme naar de root map van je project. Met een netjes en goed gestructureerde mappenstructuur en benamingen van files toon je aan dat je dit leerdoel beheerst. 
 
-Dit is de [ROOT](/MyTowerDefenseGame/) folder van mijn unity project.
+Dit is de [ROOT](/TowerDefense/) folder van mijn unity project.
 
 Zorg dat deze verwijst naar je Develop branch.
 
@@ -30,7 +23,7 @@ Zorg dat deze verwijst naar je Develop branch.
 
 Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
 
-[Release Voorbeeld](https://github.com/erwinhenraat/TowerDefenseTemplate/releases)
+[Release Voorbeeld](https://github.com/Marinusduif/TowerDefenseTemplate/releases/tag/1.01)
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
